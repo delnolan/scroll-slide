@@ -1,0 +1,65 @@
+section {
+  display: block;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+section{
+	transition:0.3s ease;
+	-webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition:  0.3s ease;
+    -o-transition: 0.3s ease;
+}
+body {
+  margin: 0;
+}
+section.top-stack {
+  top: -100vh;
+}
+.panel:nth-of-type(1){
+	background:#000000;
+	z-index:5;
+}
+.panel:nth-of-type(2){
+	background:#303030;
+	z-index:4;
+}
+.panel:nth-of-type(3){
+	background:#606060;
+	z-index:3;
+}
+.panel:nth-of-type(4){
+	background:#909090;
+	z-index:2;
+}
+.panel:nth-of-type(5){
+	background:#c0c0c0;
+	z-index:1;
+}
+.control-circle.highlight, .control-circle:hover {
+  background: #ffffff none repeat scroll 0 0;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+}
+.control-circle {
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  border-radius: 14px;
+  height: 12px;
+  margin-bottom: 10px;
+  width: 12px;
+}
+.control-circle {
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition:all 0.3s ease 0s; 
+  -ms-transition: all 0.3s ease 0s; 
+  -o-transition: all 0.3s ease 0s;
+}
+.controls {
+  position: fixed;
+  right: 32px;
+  top: 100px;
+  z-index: 1000;
+}
